@@ -3,6 +3,7 @@ import NavBar from "./components/NavBar";
 import HeaderCom from "./components/HeaderCom";
 import "./scss/app.scss";
 import HelloWorld from "./components/HelloWorld";
+import FooterCom from "./components/FooterCom";
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
         <div className="body">
           <HelloWorld></HelloWorld>
         </div>
+      </div>
+      <div className="footer">
+        <FooterCom></FooterCom>
       </div>
     </div>
   );

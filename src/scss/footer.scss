@@ -1,0 +1,36 @@
+@import "./basic.scss";
+
+* {
+  @include basic();
+}
+.footer {
+  display: flex;
+  width: 100%;
+  background: #282b86;
+  height: 200px;
+  padding: 25px;
+  justify-content: space-evenly;
+}
+
+.footer div {
+  padding: 10px;
+}
+.footer h1 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.footer ul {
+  list-style-type: none;
+}
+.footer ul li {
+  margin: 5px;
+}
+
+.footer ul li a {
+  color: white;
+  text-decoration: none;
+}
+.footer ul li a:hover {
+  color: red;
+}
