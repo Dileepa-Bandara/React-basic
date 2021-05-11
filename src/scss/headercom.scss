@@ -1,0 +1,54 @@
+@import "./basic.scss";
+
+* {
+  @include basic();
+}
+$primary_color: white;
+$secondary_color: yellow;
+$font_family: Satisfy, cursive;
+$header_position: relative;
+
+.header {
+  position: $header_position;
+}
+.header img {
+  position: absolute;
+  z-index: -10;
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.header h2 {
+  position: absolute;
+  top: 85px;
+  left: 25px;
+  color: $primary_color;
+  font-family: $font_family;
+}
+.header h3 {
+  color: $secondary_color;
+}
+.header h5 {
+  position: absolute;
+  color: $primary_color;
+  font-family: $font_family;
+}
+
+.header__list {
+  position: absolute;
+  top: 100px;
+  display: flex;
+  width: 100%;
+  padding: 25px;
+}
+
+.list__left {
+  padding: 25px;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+.list__right {
+  padding: 25px;
+  margin-left: 35px;
+}
