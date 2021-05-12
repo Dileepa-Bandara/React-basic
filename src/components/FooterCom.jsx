@@ -9,16 +9,16 @@ function FooterCom() {
         <h1>Footer 1</h1>
         <ul>
           <li>
-            <a href="">Home Page</a>
+            <a href="#">Home Page</a>
           </li>
           <li>
-            <a href="">Props</a>
+            <a href="#">Props</a>
           </li>
           <li>
-            <a href="">States</a>
+            <a href="#">States</a>
           </li>
           <li>
-            <a href="">Forms</a>
+            <a href="#">Forms</a>
           </li>
         </ul>
       </div>
@@ -27,16 +27,16 @@ function FooterCom() {
 
         <ul>
           <li>
-            <a href="">Higher Order Components</a>
+            <a href="#">Higher Order Components</a>
           </li>
           <li>
-            <a href="">useState Hook</a>
+            <a href="#">useState Hook</a>
           </li>
           <li>
-            <a href="">useEffect Hook</a>
+            <a href="#">useEffect Hook</a>
           </li>
           <li>
-            <a href="">useContext Hook</a>
+            <a href="#">useContext Hook</a>
           </li>
         </ul>
       </div>
@@ -48,7 +48,7 @@ function FooterCom() {
           </li>
           <li>
             <Button
-              variant="contain"
+              variant="contained"
               color="secondary"
               style={{ background: "red", color: "white" }}
             >

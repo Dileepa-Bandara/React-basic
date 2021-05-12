@@ -1,4 +1,5 @@
 import React from "react";
+import { data } from "./components/dataList.js";
 import NavBar from "./components/NavBar";
 import { Grid } from "@material-ui/core";
 
@@ -6,8 +7,11 @@ import HeaderCom from "./components/HeaderCom";
 import HelloWorld from "./components/HelloWorld";
 import "./scss/app.scss";
 import FooterCom from "./components/FooterCom";
+import { Route, Switch } from "react-router-dom";
+import PropsCom from "./components/PropsCom.jsx";
 
 function App() {
+  console.log(data);
   return (
     <>
       <div className="container">
@@ -19,7 +23,10 @@ function App() {
           <HeaderCom></HeaderCom>
         </Grid>
         <Grid container>
-          <HelloWorld></HelloWorld>
+          <Switch>
+            <Route exact path="/" component={HelloWorld}></Route>
+            <Route exact path="/props" component={() => PropsCom(data)}></Route>
+          </Switch>
         </Grid>
         <Grid container>
           <FooterCom></FooterCom>
