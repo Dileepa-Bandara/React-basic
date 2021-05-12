@@ -1,5 +1,6 @@
 import React from "react";
 import "../scss/footer.scss";
+import { Button } from "@material-ui/core";
 
 function FooterCom() {
   return (
@@ -44,6 +45,15 @@ function FooterCom() {
         <ul>
           <li>
             <a href="">useRef Hook</a>
+          </li>
+          <li>
+            <Button
+              variant="contain"
+              color="secondary"
+              style={{ background: "red", color: "white" }}
+            >
+              Home
+            </Button>
           </li>
         </ul>
       </div>

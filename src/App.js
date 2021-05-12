@@ -1,28 +1,31 @@
 import React from "react";
 import NavBar from "./components/NavBar";
+import { Grid } from "@material-ui/core";
+
 import HeaderCom from "./components/HeaderCom";
-import "./scss/app.scss";
 import HelloWorld from "./components/HelloWorld";
+import "./scss/app.scss";
 import FooterCom from "./components/FooterCom";
 
 function App() {
   return (
-    <div>
+    <>
       <div className="container">
-        <div className="nav">
+        <Grid container>
           <NavBar></NavBar>
-        </div>
-        <div className="header">
+        </Grid>
+
+        <Grid container>
           <HeaderCom></HeaderCom>
-        </div>
-        <div className="body">
+        </Grid>
+        <Grid container>
           <HelloWorld></HelloWorld>
-        </div>
+        </Grid>
+        <Grid container>
+          <FooterCom></FooterCom>
+        </Grid>
       </div>
-      <div className="footer">
-        <FooterCom></FooterCom>
-      </div>
-    </div>
+    </>
   );
 }
 

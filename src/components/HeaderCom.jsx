@@ -5,7 +5,7 @@ function HeaderCom() {
   return (
     <>
       <div className="header">
-        <img src="./images/cat.jpg" alt="" />
+        <img src="./images/cat.jpg" alt="cat" />
         <h2> Content....</h2>
         <div className="header__list">
           <div className="list__left">

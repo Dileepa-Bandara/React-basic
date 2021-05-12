@@ -4,25 +4,23 @@
   @include basic();
 }
 
-@mixin page {
+.hello {
+  background: black;
   color: white;
-  padding: 25px;
-
-  border-top: 2px solid white;
+  padding: 35px;
 }
 
-@mixin page_topic {
-  opacity: 0.8;
-  padding: 10px;
-  margin-bottom: 100px;
+.hello h2 {
   text-align: center;
-  background: #282b86;
+
+  padding: 10px;
+  margin-bottom: 50px;
+  border-radius: 8px;
+  &:hover {
+    background: green;
+  }
 }
 
-.hello__topic {
-  @include page();
-}
-
-.hello__topic h2 {
-  @include page_topic();
+.hello p {
+  margin-bottom: 75px;
 }

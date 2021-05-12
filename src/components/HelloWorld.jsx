@@ -3,14 +3,7 @@ import "../scss/hello.scss";
 
 function HelloWorld() {
   return (
-    <div
-      style={{
-        background: "black",
-        opacity: "1",
-        borderRadius: "8px",
-        padding: "25px",
-      }}
-    >
+    <div className="hello">
       <div className="hello__topic">
         <h2>Hello World</h2>
         <p>

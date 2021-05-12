@@ -6,8 +6,8 @@
 .footer {
   display: flex;
   width: 100%;
-  background: #282b86;
-  height: 200px;
+  background: #01403a;
+
   padding: 25px;
   justify-content: space-evenly;
 }
@@ -32,5 +32,5 @@
   text-decoration: none;
 }
 .footer ul li a:hover {
-  color: red;
+  color: yellow;
 }
