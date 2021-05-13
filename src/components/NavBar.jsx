@@ -111,7 +111,10 @@ function NavBar(props) {
               Home
             </Link>
             <Link to="/props" className={classes.link}>
-              Props
+              Profile(props)
+            </Link>
+            <Link to="/state" className={classes.link}>
+              Calculator(state)
             </Link>
           </CardContent>
         </Card>

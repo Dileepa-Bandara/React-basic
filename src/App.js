@@ -9,6 +9,7 @@ import "./scss/app.scss";
 import FooterCom from "./components/FooterCom";
 import { Route, Switch } from "react-router-dom";
 import PropsCom from "./components/PropsCom.jsx";
+import StateCom from "./components/StateCom.jsx";
 
 function App() {
   console.log(data);
@@ -26,6 +27,7 @@ function App() {
           <Switch>
             <Route exact path="/" component={HelloWorld}></Route>
             <Route exact path="/props" component={() => PropsCom(data)}></Route>
+            <Route exact path="/state" component={StateCom}></Route>
           </Switch>
         </Grid>
         <Grid container>
