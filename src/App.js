@@ -11,6 +11,7 @@ import { Route, Switch } from "react-router-dom";
 import PropsCom from "./components/PropsCom.jsx";
 import StateCom from "./components/StateCom.jsx";
 import FormCom from "./components/FormCom.jsx";
+import CounterMain from "./components/CounterMain.jsx";
 
 function App() {
   console.log(data);
@@ -30,6 +31,8 @@ function App() {
             <Route exact path="/props" component={() => PropsCom(data)}></Route>
             <Route exact path="/state" component={StateCom}></Route>
             <Route exact path="/form" component={FormCom}></Route>
+
+            <Route exact path="/counter" component={CounterMain}></Route>
           </Switch>
         </Grid>
         <Grid container>

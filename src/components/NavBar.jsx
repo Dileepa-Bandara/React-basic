@@ -119,6 +119,9 @@ function NavBar(props) {
             <Link to="/form" className={classes.link}>
               Forms
             </Link>
+            <Link to="/counter" className={classes.link}>
+              Counter
+            </Link>
           </CardContent>
         </Card>
       </Drawer>
