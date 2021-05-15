@@ -1,0 +1,51 @@
+@mixin basic {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.form_container {
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+  width: 100%;
+}
+
+.form {
+  padding: 25px;
+  color: black;
+  background: white;
+  width: 450px;
+}
+
+.form fieldset {
+  padding: 10px;
+  display: block;
+  text-align: center;
+
+  & input {
+    padding: 8px;
+    width: 80%;
+    margin-bottom: 8px;
+  }
+  & button {
+    padding: 8px;
+    border: none;
+    background: green;
+    color: white;
+  }
+}
+
+.display {
+  margin-top: 35px;
+
+  & table {
+    border-collapse: collapse;
+
+    & th,
+    td {
+      padding: 10px;
+    }
+  }
+}

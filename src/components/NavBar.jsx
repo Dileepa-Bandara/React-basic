@@ -116,6 +116,9 @@ function NavBar(props) {
             <Link to="/state" className={classes.link}>
               Calculator(state)
             </Link>
+            <Link to="/form" className={classes.link}>
+              Forms
+            </Link>
           </CardContent>
         </Card>
       </Drawer>
