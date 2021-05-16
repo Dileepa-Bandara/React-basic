@@ -1,24 +1,33 @@
-1.Create nav bar
+1.Create nav bar(completed)
 
-Material-ui (AppBar,Drawer)
+2.header(completed)
 
-2.header
+3.Footer(completed)
 
-3.Footer
+4.Hello Component (completed -Homepage)
 
-4.Hello Component
+5.Props component (completed - Landingpage/profile)
 
-5.Props component
+6.State component (not completed - calculater)
 
-6.State component
-
-8.Form component
+7.Form component (completed - normal form)
 
 
-10.UseEffect component
+8.UseEffect component (completed - simple weather finder)
 
-12.Higher Order component
 
-14.deploy to netlify =  https://dilluck-react-basic.netlify.app
+9.Higher Order component (completed - simple counter)
+
+10.deploy to netlify =  https://dilluck-react-basic.netlify.app
+there was some issues in deployement to netlify through github..Only success manual deployment
+
+used depencies ------------------------------------------------------------------------------------
+-framer motion (animations)
+-react router dom (routing)
+-axios (async calls)
+-scss(css)
+
+
+
 
 
