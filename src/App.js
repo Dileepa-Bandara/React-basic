@@ -12,6 +12,7 @@ import PropsCom from "./components/PropsCom.jsx";
 import StateCom from "./components/StateCom.jsx";
 import FormCom from "./components/FormCom.jsx";
 import CounterMain from "./components/CounterMain.jsx";
+import UseEffectCom from "./components/UseEffectCom.jsx";
 
 function App() {
   console.log(data);
@@ -33,6 +34,7 @@ function App() {
             <Route exact path="/form" component={FormCom}></Route>
 
             <Route exact path="/counter" component={CounterMain}></Route>
+            <Route exact path="/useeffect" component={UseEffectCom}></Route>
           </Switch>
         </Grid>
         <Grid container>

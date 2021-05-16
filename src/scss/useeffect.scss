@@ -1,0 +1,59 @@
+@import "./basic.scss";
+
+* {
+  @include basic();
+}
+
+.useeffect_container {
+  width: 100%;
+  background: black;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.display_effect {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+
+  & img {
+    width: 60%;
+    height: 650px;
+    position: relative;
+  }
+  & input {
+    position: absolute;
+    width: 50%;
+    padding: 10px;
+    margin-top: 25px;
+  }
+
+  & button {
+    position: absolute;
+    margin-top: 75px;
+    padding: 10px;
+    border: none;
+    background: tomato;
+    color: white;
+  }
+}
+
+.weather_details {
+  background: white;
+  height: 100px;
+  width: 300px;
+  position: absolute;
+  margin-top: 300px;
+  padding: 15px;
+
+  & h3 {
+    color: blue;
+    text-align: center;
+  }
+  & p {
+    margin: 10px;
+  }
+}
