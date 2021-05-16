@@ -11,9 +11,14 @@ Material-ui (AppBar,Drawer)
 5.Props component
 
 6.State component
-7.Form component
-8.UseEffect component
-9.Higher Order component
-10.deploy to netlify
+
+8.Form component
+
+
+10.UseEffect component
+
+12.Higher Order component
+
+14.deploy to netlify =  https://dilluck-react-basic.netlify.app
 
 
