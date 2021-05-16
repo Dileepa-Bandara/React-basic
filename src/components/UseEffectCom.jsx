@@ -36,7 +36,12 @@ function UseEffectCom() {
     <div className="useeffect_container">
       <div className="display_effect">
         <img src="./images/weather.jpg" alt="weather" />
-        <input type="text" value={input.term} onChange={addTerm} />
+        <input
+          type="text"
+          value={input.term}
+          onChange={addTerm}
+          placeholder="Enter City.."
+        />
         <button onClick={searchFunc}>Search</button>
 
         <div className="weather_details">

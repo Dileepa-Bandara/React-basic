@@ -122,6 +122,9 @@ function NavBar(props) {
             <Link to="/counter" className={classes.link}>
               Counter
             </Link>
+            <Link to="/useeffect" className={classes.link}>
+              Weather
+            </Link>
           </CardContent>
         </Card>
       </Drawer>
