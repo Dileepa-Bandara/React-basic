@@ -23,10 +23,18 @@ there was some issues in deployement to netlify through github..Only success man
 
 used depencies ------------------------------------------------------------------------------------
 -framer motion (animations)
+
+
 -react router dom (routing)
+
+
 -axios (async calls)
+
+
 -scss(css)
 
+
+Materia UI(UI)
 
 
 
