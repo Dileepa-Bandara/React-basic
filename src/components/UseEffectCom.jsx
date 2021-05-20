@@ -24,7 +24,7 @@ function UseEffectCom() {
         .then((res) => setInput({...input,search:"",term:"",list: res.data }))
         .catch((err) => console.log(err));
     }
-  }, [submit]);
+  }, [input,submit]);
 
   const searchFunc = () => {
     setSubmit(!submit);
