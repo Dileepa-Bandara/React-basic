@@ -6,9 +6,11 @@ function UseEffectCom() {
   const [input, setInput] = useState({
     term: "",
     search: "colombo",
-    list: [],
-    submit: false,
+    list: []
+   
   });
+  
+  const [submit.setSubmit]  = useState(false);
 
   useEffect(() => {
     if (input.search) {
@@ -22,10 +24,10 @@ function UseEffectCom() {
         .then((res) => setInput({ ...input, list: res.data }))
         .catch((err) => console.log(err));
     }
-  }, [input,input.submit]);
+  }, [submit]);
 
   const searchFunc = () => {
-    setInput({ ...input, search: input.term, submit: !input.submit, term: "" });
+    setSubmit(!submit);
   };
 
   const addTerm = (e) => {
