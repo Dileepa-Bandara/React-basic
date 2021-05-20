@@ -6,7 +6,7 @@ function UseEffectCom() {
   const [input, setInput] = useState({
     term: "",
     search: "colombo",
-    list: []
+    list: ""
    
   });
   
