@@ -1,41 +1,16 @@
-1.Create nav bar(completed)
+## Basic React Project
+<p>This is the website made with basic react concepts like states,props,hooks,HOC and more</p>
 
-2.header(completed)
+![Demo](dilluck-react-basic.netlify.app)
 
-3.Footer(completed)
+![Basic React App](./react.jpg)
 
-4.Hello Component (completed -Homepage)
+## Used Libraries
+- Framer-motion - animations
+- Material-UI - UI
+- React-router-dom - routing
+- node-sass - scss
 
-5.Props component (completed - Landingpage/profile)
+## Authors
 
-6.State component (not completed - calculater)
-
-7.Form component (completed - normal form)
-
-
-8.UseEffect component (completed - simple weather finder)
-
-
-9.Higher Order component (completed - simple counter)
-
-10.deploy to netlify =  https://dilluck-react-basic.netlify.app
-there was some issues in deployement to netlify through github..Only success manual deployment
-
-used depencies ------------------------------------------------------------------------------------
--framer motion (animations)
-
-
--react router dom (routing)
-
-
--axios (async calls)
-
-
--scss(css)
-
-
-Materia UI(UI)
-
-
-
-
+* **Dileepa Bandara** - *First React App* -[Basic React](dilluck-react-basic.netlify.app)
