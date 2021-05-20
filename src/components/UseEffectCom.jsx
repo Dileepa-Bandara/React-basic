@@ -10,7 +10,7 @@ function UseEffectCom() {
    
   });
   
-  const [submit.setSubmit]  = useState(false);
+  const [submit,setSubmit]  = useState(false);
 
   useEffect(() => {
     if (input.search) {
