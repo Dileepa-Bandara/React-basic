@@ -21,7 +21,7 @@ function UseEffectCom() {
             appid: "6fa19a6b840e2d8ede589918d1cd8946",
           },
         })
-        .then((res) => setInput({list: res.data })
+        .then((res) => setInput({list: res.data }))
         .catch((err) => console.log(err));
     }
   }, [submit]);
