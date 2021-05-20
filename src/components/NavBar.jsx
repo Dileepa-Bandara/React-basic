@@ -44,6 +44,10 @@ const useStyles = makeStyles({
     padding: "10px",
     marginBottom: 4,
     textAlign: "center",
+
+    "&:hover": {
+      background: "blue",
+    },
   },
 });
 
