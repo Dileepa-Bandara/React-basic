@@ -4,3 +4,6 @@
 ![Demo](dilluck-react-basic.netlify.app)
 
 ![Basic React App](./react.jpg)
+
+## Used Depencies
+- Framer-motion - animations
