@@ -22,7 +22,7 @@ function UseEffectCom() {
         .then((res) => setInput({ ...input, list: res.data }))
         .catch((err) => console.log(err));
     }
-  }, [ input.submit]);
+  }, [ ...input.submit]);
 
   const searchFunc = () => {
     setInput({ ...input, search: input.term, submit: !input.submit, term: "" });
@@ -31,7 +31,7 @@ function UseEffectCom() {
   const addTerm = (e) => {
     setInput({ ...input, term: e.target.value });
   };
-  console.log(input.list.weather);
+  console.log(input,input.list.weather);
   return (
     <div className="useeffect_container">
       <div className="display_effect">
