@@ -14,8 +14,8 @@ import FormCom from "./components/FormCom.jsx";
 import CounterMain from "./components/CounterMain.jsx";
 import UseEffectCom from "./components/UseEffectCom.jsx";
 
-function App() {
-  console.log(data);
+function App(props) {
+  console.log(props);
   return (
     <>
       <div className="container">

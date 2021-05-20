@@ -76,12 +76,13 @@ function NavBar(props) {
                   <FastForwardIcon style={{ color: "white" }}></FastForwardIcon>
                 }
               >
-                Demo
+                Code
               </Button>
               <Button
-                variant="contained"
+                variant="outlined"
                 color="secondary"
                 style={{ marginLeft: "10px" }}
+                href="/"
               >
                 Home
               </Button>
@@ -114,16 +115,16 @@ function NavBar(props) {
               Profile(props)
             </Link>
             <Link to="/state" className={classes.link}>
-              Calculator(state)
+              Simple Counter(state)
             </Link>
             <Link to="/form" className={classes.link}>
-              Forms
+              Forms(onChange)
             </Link>
             <Link to="/counter" className={classes.link}>
-              Counter
+              Counter(HOC)
             </Link>
             <Link to="/useeffect" className={classes.link}>
-              Weather
+              Weather(useEffect)
             </Link>
           </CardContent>
         </Card>

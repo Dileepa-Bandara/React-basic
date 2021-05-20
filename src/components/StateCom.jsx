@@ -1,103 +1,31 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+import { Button } from "@material-ui/core";
 import "../scss/state.scss";
 
 function StateCom() {
-  const [input, setInput] = useState({
-    display: "",
-    previousNumber: "",
-    currentNumber: "",
-    answer: "",
-    operator: "",
-  });
+  const [count, setCount] = useState(0);
 
-  const clickFunction = (value) => {
-    setInput({ ...input, display: input.display + value });
+  const addFunction = () => {
+    setCount((e) => e + 1);
+  };
+  const subtractFunction = () => {
+    setCount((e) => e - 1);
   };
 
-  const addFunction = (add) => {
-    if (input.answer) {
-      setInput({
-        ...input,
-        answer: "",
-
-        previousNumber: input.answer,
-        operator: add,
-        currentNumber: input.display,
-      });
-      console.log(input.display);
-    } else {
-      setInput({
-        ...input,
-        previousNumber: input.display,
-        display: "",
-        operator: add,
-      });
-    }
-  };
-
-  const evaluateFunction = () => {
-    if (input.operator === "+") {
-      setInput({
-        ...input,
-
-        currentNumber: input.display,
-        display: "",
-      });
-    }
-  };
-
-  useEffect(() => {
-    setInput({
-      ...input,
-      answer: parseInt(input.previousNumber) + parseInt(input.currentNumber),
-    });
-  }, [input.currentNumber]);
   return (
-    <div className="state_container">
-      <div className="state">
-        <h2>Calculator</h2>
-        <div className="calc">
-          <div className="display">
-            <input
-              type="text"
-              readOnly
-              value={input.answer ? input.answer : input.display}
-            />
-          </div>
-          <div className="row1">
-            <button style={{ flex: 0.5 }} onClick={() => clickFunction(1)}>
-              1
-            </button>
-            <button style={{ flex: 0.5 }} onClick={() => clickFunction(2)}>
-              2
-            </button>
-            <button style={{ flex: 0.5 }} onClick={() => clickFunction(3)}>
-              3
-            </button>
-            <button style={{ flex: 1 }} onClick={() => addFunction("+")}>
-              +
-            </button>
-          </div>
-          <div className="row1">
-            <button style={{ flex: 0.5 }}>4</button>
-            <button style={{ flex: 0.5 }}>5</button>
-            <button style={{ flex: 0.5 }}>6</button>
-            <button style={{ flex: 1 }}>--</button>
-          </div>
-          <div className="row1">
-            <button style={{ flex: 0.5 }}>7</button>
-            <button style={{ flex: 0.5 }}>8</button>
-            <button style={{ flex: 0.5 }}>9</button>
-            <button style={{ flex: 1 }}>*</button>
-          </div>
-          <div className="row1">
-            <button style={{ flex: 0.5 }}>0</button>
-            <button style={{ flex: 0.5 }}>/</button>
-            <button style={{ flex: 0.5 }} onClick={() => evaluateFunction()}>
-              =
-            </button>
-          </div>
-        </div>
+    <div className="simple__counter">
+      <div className="counter__container">
+        <h1>{count}</h1>
+        <Button variant="contained" color="secondary" onClick={addFunction}>
+          Add 1
+        </Button>
+        <Button
+          variant="contained"
+          color="secondary"
+          onClick={subtractFunction}
+        >
+          Subtract 1
+        </Button>
       </div>
     </div>
   );

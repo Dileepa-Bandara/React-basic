@@ -2,6 +2,7 @@ import React from "react";
 import "../scss/props.scss";
 import { motion } from "framer-motion";
 import { Button } from "@material-ui/core";
+
 function PropsCom({ name, passion }) {
   return (
     <div className="props">

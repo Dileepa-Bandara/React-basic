@@ -22,7 +22,7 @@ function UseEffectCom() {
         .then((res) => setInput({ ...input, list: res.data }))
         .catch((err) => console.log(err));
     }
-  }, [input.submit]);
+  }, [input, input.submit]);
 
   const searchFunc = () => {
     setInput({ ...input, search: input.term, submit: !input.submit, term: "" });
