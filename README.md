@@ -5,5 +5,12 @@
 
 ![Basic React App](./react.jpg)
 
-## Used Depencies
+## Used Libraries
 - Framer-motion - animations
+- Material-UI - UI
+- React-router-dom - routing
+- node-sass - scss
+
+## Authors
+
+* **Dileepa Bandara** - *First React App* -[Basic React](dilluck-react-basic.netlify.app)
